@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|| Responsive Nav - JS ||</title>
+    <link rel="shortcut icon" href="student.png" type="image/x-icon">
+    <script src="JS/jquery-3.6.0.min.js"></script>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #header {
+            background-color: rgb(31, 240, 255);
+        }
+
+        #list {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .links {
+            text-decoration: none;
+            font-size: 25px;
+            font-family: sans-serif;
+            display: block;
+            color: black;
+            padding: 5px;
+            margin: 13px 20px;
+        }
+
+        .links:hover {
+            color: rgb(54, 50, 50);
+        }
+
+        #logo {
+            height: 50px;
+            margin: 5px 0px;
+            margin-right: 20px;
+            margin-left: 10px;
+            pointer-events: none;
+        }
+
+        @media screen and (max-width: 685px) {
+            .links {
+                margin: 13px 10px;
+                font-size: 20px;
+            }
+
+            #logo {
+                height: 40px;
+                margin-top: 10px;
+            }
+        }
+
+        @media screen and (max-width: 520px) {
+            .links{
+                margin: 2px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="header">
+        <ul id="list">
+            <li class="items"><img id="logo" src="student.png" alt="Image is not Available"></li>
+            <li class="items"><a href="#" class="links">Home</a></li>
+            <li class="items"><a href="#" class="links">Categories</a></li>
+            <li class="items"><a href="#" class="links">About us</a></li>
+            <li class="items"><a href="#" class="links">Contact us</a></li>
+        </ul>
+    </nav>
+</body>
+<script src="JS/nav.js"></script>
+
+</html>
